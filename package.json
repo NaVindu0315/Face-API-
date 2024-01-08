@@ -1,0 +1,11 @@
+{
+  "name": "face-api-",
+  "version": "1.0.0",
+  "description": "face api using Face++ to compare two faces using image url",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NaVindu LakShan",
+  "license": "ISC"
+}

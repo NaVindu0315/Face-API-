@@ -21,3 +21,18 @@ app.post('/compareFaces', (req, res) => {
         method: 'POST',
         formData: formData,
     };
+    request(options, (error, response, body) => {
+        if (error) {
+            console.error(error);
+            res.status(500).send('An error occurred');
+        } else {
+            const confvalue = JSON.parse(body).confidence;
+            if(confvalue > 85){
+                res.send({ message: "same person", confidence: confvalue });
+            }
+            else{ 
+                res.send({ message: "different person", confidence: confvalue });
+            }
+        }
+    });
+});

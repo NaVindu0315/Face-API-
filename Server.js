@@ -16,3 +16,8 @@ app.post('/compareFaces', (req, res) => {
         image_url1: faceurl1,
         image_url2: faceurl2,
     };
+    const options = {
+        url: 'https://api-us.faceplusplus.com/facepp/v3/compare',
+        method: 'POST',
+        formData: formData,
+    };

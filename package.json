@@ -4,7 +4,8 @@
   "description": "face api using Face++ to compare two faces using image url",
   "main": "Server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel-build":"echo hello world"
   },
   "author": "NaVindu LakShan",
   "license": "ISC",

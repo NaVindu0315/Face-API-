@@ -9,7 +9,7 @@ app.use(express.json());
 const apiKey = 'Ihp7UgfV3b7KH-aAyQl5EiStwGX5ch1B';
 const apiSecret = '_kjlV-L5QjSYp9vQVP9a4VHosyehnbJ7';
 
-app.post('/compareFaces', (req, res) => {
+app.post('/api/compareFaces', (req, res) => {
     const {  faceurl1, faceurl2 } = req.body;
 
     const formData = {
